@@ -1,0 +1,40 @@
+{
+  "name": "kj-resource-postgres",
+  "version": "0.0.0",
+  "description": "Postgres resource creation for the kj webapp framework.",
+  "author": "Ron Elliott <ronaldbelliott@gmail.com>",
+  "license": "ISC",
+  "keywords": [
+    "webapp",
+    "framework",
+    "resource",
+    "crud",
+    "postgres"
+  ],
+  "scripts": {
+    "coverage:upload": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test": "mocha",
+    "test:coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.11",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^3.0.0-1",
+    "proxyquire": "^1.7.10",
+    "reflekt": "^0.3.9",
+    "should": "^9.0.2",
+    "sinon": "^2.0.0-pre.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronelliott/kj-resource-postgres.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ronelliott/kj-resource-postgres/issues"
+  },
+  "homepage": "https://github.com/ronelliott/kj-resource-postgres#readme",
+  "dependencies": {
+    "is": "^3.1.0",
+    "parent-require": "^1.0.0"
+  }
+}
